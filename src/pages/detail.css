@@ -1,0 +1,94 @@
+/* Import police */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container principal */
+.detail-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+/* Titre */
+.detail-container h1 {
+  color: #2596be; /* accent-color */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Image */
+.detail-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Texte */
+.detail-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Liste */
+.detail-container ul {
+  margin: 20px auto;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+}
+
+.detail-container ul li {
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-left: 4px solid #2596be;
+  font-size: 1rem;
+}
+
+/* Bouton retour */
+.btn-custom {
+  display: inline-block;
+  background: linear-gradient(90deg, #2596be, #cebc79);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 150, 190, 0.4);
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #cebc79, #2596be);
+}
+
+/* Animation fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
