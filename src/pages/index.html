@@ -1,104 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Sedera</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Section Home -->
   <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-light">
     <h1>Bienvenue sur mon portfolio</h1>
     <h4 class="animated-rgb">Je suis Sedera Randriamparany, Développeur Fullstack & Data Analyst</h4>
-    <div class="mt-3">
+    <div class="mt-3 d-flex justify-content-center gap-3">
       <a href="#projets" class="btn btn-custom">Portfolio</a>
-      <a href="#experiences" class="btn btn-outline-light">Expériences</a>
+      <a href="#experiences" class="btn btn-experience">Expériences</a>
+      <a href="#apropos" class="btn btn-custom">À propos</a>
     </div>
   </div>
 
   <!-- Section À propos -->
-  <section id="apropos" class="py-5 text-center bg-dark text-light">
-    <div class="container">
-      <h2>À propos</h2>
-      <img src="ma-photo.jpg" alt="Photo Sedera" class="rounded-circle mb-3" width="150">
-      <p>Je suis étudiant en informatique à HEI Madagascar, passionné par le développement Fullstack et l’analyse de données. Mon objectif est de créer des applications robustes et évolutives, tout en contribuant à des projets qui ont un impact réel.</p>
-    </div>
-  </section>
-
-  <!-- Section Compétences -->
-  <section id="competences" class="py-5 bg-light">
+  <section id="apropos" class="py-5 bg-light text-dark">
     <div class="container text-center">
-      <h2>Compétences</h2>
-      <div class="row mt-4">
-        <div class="col-md-3">
-          <div class="card p-3 shadow">
-            <i class="fab fa-java fa-3x text-primary"></i>
-            <h5 class="mt-2">Java</h5>
-          </div>
+      <h2>À propos</h2>
+      <div class="row align-items-center mt-4">
+        <div class="col-md-4">
+          <img src="ma-photo.jpg" alt="Photo Sedera" class="rounded-circle profile-img"/>
         </div>
-        <div class="col-md-3">
-          <div class="card p-3 shadow">
-            <i class="fab fa-react fa-3x text-info"></i>
-            <h5 class="mt-2">React</h5>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card p-3 shadow">
-            <i class="fas fa-database fa-3x text-success"></i>
-            <h5 class="mt-2">PostgreSQL</h5>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card p-3 shadow">
-            <i class="fab fa-docker fa-3x text-primary"></i>
-            <h5 class="mt-2">Docker</h5>
-          </div>
+        <div class="col-md-8">
+          <p class="lead">
+            Je suis étudiant en informatique à HEI Madagascar, passionné par le développement Fullstack et l’analyse de données. 
+            Mon objectif est de créer des applications robustes et évolutives, tout en contribuant à des projets qui ont un impact réel.
+          </p>
+          <p>
+            J’aime apprendre par la pratique, expérimenter de nouvelles technologies et améliorer continuellement mes projets pour les rendre plus professionnels et maintenables.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Section Expériences -->
-  <section id="experiences" class="py-5 bg-dark text-light">
-    <div class="container">
-      <h2 class="text-center">Expériences</h2>
-      <div class="timeline mt-4">
-        <div class="mb-4">
-          <h5>Alternant IT Support - HEI (2024 - Présent)</h5>
-          <p>Assistance technique auprès de 100+ utilisateurs, réduction des incidents critiques de 15 %.</p>
-        </div>
-        <div class="mb-4">
-          <h5>Développeur Logiciel (2023 - Présent)</h5>
-          <p>Développement en Java & React, optimisation backend (+25 % performance).</p>
-        </div>
-        <div class="mb-4">
-          <h5>Projet CASEF - Ministère de l’Aménagement (2023)</h5>
-          <p>Participation à la sécurisation foncière, collecte et vérification des données terrain.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Projets -->
-  <section id="projets" class="py-5 bg-light">
+  <section id="experiences" class="py-5 bg-experience">
     <div class="container text-center">
-      <h2>Projets</h2>
+      <h2 class="mb-4">Expériences</h2>
       <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="card p-3 shadow">
-            <h5>Hackathon Naturo Match (2024)</h5>
-            <p>1er prix - Développement frontend React.</p>
-            <a href="https://github.com/sederahei" class="btn btn-sm btn-custom">Voir sur GitHub</a>
+        <!-- IT Support -->
+        <div class="col-md-4">
+          <div class="card exp-card shadow it-card">
+            <h5>Alternant IT Support - HEI</h5>
+            <p>Assistance technique auprès de 100+ utilisateurs, réduction des incidents critiques de 15 %.</p>
+            <a href="itsupport.html" class="btn btn-custom mt-2">Voir détail</a>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card p-3 shadow">
-            <h5>Applications Java/Spring Boot</h5>
-            <p>Développement d’API robustes et intégration avec React.</p>
-            <a href="https://github.com/sederahei" class="btn btn-sm btn-custom">Voir sur GitHub</a>
+        <!-- Développeur Logiciel -->
+        <div class="col-md-4">
+          <div class="card exp-card shadow dev-card">
+            <h5>Développeur Logiciel</h5>
+            <p>Développement en Java & React, optimisation backend (+25 % performance).</p>
+            <a href="devlog.html" class="btn btn-custom mt-2">Voir détail</a>
+          </div>
+        </div>
+        <!-- Hackathon -->
+        <div class="col-md-4">
+          <div class="card exp-card shadow hackathon-card">
+            <h5>Hackathon Naturo Match (2024)</h5>
+            <p><strong>🏆 Vainqueur du Hackathon</strong> - 1er prix grâce au développement frontend React.</p>
+            <a href="hackathon.html" class="btn btn-experience mt-2">Voir détail</a>
           </div>
         </div>
       </div>
@@ -111,10 +80,10 @@
       <h2>Contact</h2>
       <form class="mt-4">
         <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Votre nom">
+          <input type="text" class="form-control" placeholder="Votre nom" />
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Votre email">
+          <input type="email" class="form-control" placeholder="Votre email" />
         </div>
         <div class="mb-3">
           <textarea class="form-control" rows="4" placeholder="Votre message"></textarea>
