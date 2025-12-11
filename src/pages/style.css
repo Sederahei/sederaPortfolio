@@ -1,0 +1,130 @@
+/* Fond avec ta photo en plein écran */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.overlay {
+  background: url("./../../IMG_4020.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Overlay sombre pour lisibilité */
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.overlay > * {
+  z-index: 1;
+}
+
+/* Couleurs personnalisées */
+:root {
+  --primary-color: hsl(196, 67, 45);
+  --secondary-color: rgba(37, 150, 190, 1);
+  --accent-color: #2596be;
+  --dark-red: #672727;
+  --soft-red: #855252;
+  --light-bg: #efe9d2;
+  --gold: #cebc79;
+  --brown: #50482a;
+}
+
+/* Boutons personnalisés */
+.btn-custom {
+  margin-right: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+/* Animation RGB sur le h4 */
+.animated-rgb {
+  font-weight: bold;
+  font-size: 1.5rem;
+  animation: rgbFlow 6s infinite linear;
+  background: linear-gradient(90deg,
+    hsl(196, 67%, 45%),
+    rgba(37, 150, 190, 1),
+    #2596be,
+    #672727,
+    #855252,
+    #efe9d2,
+    #cebc79,
+    #50482a
+  );
+  background-size: 800% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes rgbFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Footer avec icônes */
+footer {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: var(--gold);
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+  transform: scale(1.2);
+}
+/* Sections cachées au départ */
+.hidden-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  margin: 50px 0;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bouton animé */
+.animated-btn {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.animated-btn:hover {
+  transform: scale(1.1) rotate(1deg);
+  background: linear-gradient(90deg, var(--gold), var(--secondary-color));
+}
