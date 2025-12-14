@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #f5f5f5;
+  background: linear-gradient(90deg, var(--accent-color), var(--dark-red), var(--soft-red), var(--gold));
   margin: 0;
   padding: 20px;
   color: #333;
@@ -16,7 +16,7 @@ body {
   background: #fff;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 18px #2596be;
   text-align: center;
   animation: fadeInUp 1s ease;
 }
@@ -35,7 +35,7 @@ body {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px #cebc79;
 }
 
 /* Texte */
@@ -91,4 +91,11 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+:root {
+  --accent-color: #2596be; /* bleu */
+  --dark-red: #672727;     /* rouge foncé */
+  --soft-red: #855252;
+  --gold: #cebc79;         /* doré */
 }
