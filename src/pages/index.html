@@ -1,101 +1,205 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio Sedera</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Section Home -->
-  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-light">
-    <h1>Bienvenue sur mon portfolio</h1>
-    <h4 class="animated-rgb">Je suis Sedera Randriamparany, Développeur Fullstack & Data Analyst</h4>
-    <div class="mt-3 d-flex justify-content-center gap-3">
-      <a href="#projets" class="btn btn-custom">Portfolio</a>
-      <a href="#experiences" class="btn btn-experience">Expériences</a>
-      <a href="#apropos" class="btn btn-custom">À propos</a>
-    </div>
-  </div>
-
-  <!-- Section À propos -->
-  <section id="apropos" class="py-5 bg-light text-dark">
-    <div class="container text-center">
-      <h2>À propos</h2>
-      <div class="row align-items-center mt-4">
-        <div class="col-md-4">
-          <img src="../../me.jpg" alt="Photo Sedera" class="rounded-circle profile-img"/>
-        </div>
-        <div class="col-md-8">
-          <p class="lead">
-            Je suis étudiant en informatique à HEI Madagascar, passionné par le développement Fullstack et l’analyse de données. 
-            Mon objectif est de créer des applications robustes et évolutives, tout en contribuant à des projets qui ont un impact réel.
-          </p>
-          <p>
-            J’aime apprendre par la pratique, expérimenter de nouvelles technologies et améliorer continuellement mes projets pour les rendre plus professionnels et maintenables.
-          </p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Sedera</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Section Home -->
+    <div
+      class="overlay d-flex flex-column justify-content-center align-items-center text-center text-light"
+    >
+      <h1>Bienvenue sur mon portfolio</h1>
+      <h4 class="animated-rgb">
+        Je suis Sedera Randriamparany, Développeur Fullstack & Data Analyst
+      </h4>
+      <div class="mt-3 d-flex justify-content-center gap-3">
+        <a href="#projets" class="btn btn-custom">Portfolio</a>
+        <a href="#experiences" class="btn btn-experience">Expériences</a>
+        <a href="#apropos" class="btn btn-custom">À propos</a>
       </div>
     </div>
-  </section>
 
-  <!-- Section Expériences -->
-  <section id="experiences" class="py-5 bg-experience">
-    <div class="container text-center">
-      <h2 class="mb-4">Expériences</h2>
-      <div class="row mt-4">
-        <!-- IT Support -->
-        <div class="col-md-4">
-          <div class="card exp-card shadow it-card">
-            <h5>Alternant IT Support - HEI</h5>
-            <p>Assistance technique auprès de 150+ utilisateurs, réduction des incidents critiques de 47 %.</p>
-            <a href="itsupport.html" class="btn btn-custom mt-2">Voir détail</a>
+    <!-- Section À propos -->
+    <section id="apropos" class="py-5 bg-light text-dark">
+      <div class="container text-center">
+        <h2>À propos</h2>
+        <div class="row align-items-center mt-4">
+          <div class="col-md-4">
+            <img
+              src="../pages/me.jpg"
+              alt="Photo Sedera"
+              class="rounded-circle profile-img"
+            />
           </div>
-        </div>
-        <!-- Développeur Logiciel -->
-        <div class="col-md-4">
-          <div class="card exp-card shadow dev-card">
-            <h5>Développeur Logiciel</h5>
-            <p>Développement en Java & React, optimisation backend (+25 % performance).</p>
-            <a href="devlog.html" class="btn btn-custom mt-2">Voir détail</a>
-          </div>
-        </div>
-        <!-- Hackathon -->
-        <div class="col-md-4">
-          <div class="card exp-card shadow hackathon-card">
-            <h5>Hackathon Naturo Match (2024)</h5>
-            <p><strong>🏆 Vainqueur du Hackathon</strong> - 1er prix grâce au développement frontend React.</p>
-            <a href="hackathon.html" class="btn btn-experience mt-2">Voir détail</a>
+          <div class="col-md-8">
+            <p class="lead">
+              Je suis étudiant en informatique à HEI Madagascar, passionné par
+              le développement Fullstack et l’analyse de données. Mon objectif
+              est de créer des applications robustes et évolutives, tout en
+              contribuant à des projets qui ont un impact réel.
+            </p>
+            <p>
+              J’aime apprendre par la pratique, expérimenter de nouvelles
+              technologies et améliorer continuellement mes projets pour les
+              rendre plus professionnels et maintenables.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section Contact -->
-  <section id="contact" class="py-5 bg-dark text-light">
-    <div class="container text-center">
-      <h2>Contact</h2>
-      <form class="mt-4">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Votre nom" />
+    <!-- Section Expériences -->
+    <section id="experiences" class="py-5 bg-experience">
+      <div class="container text-center">
+        <h2 class="mb-4">Expériences</h2>
+        <div class="row mt-4">
+          <!-- IT Support -->
+          <div class="col-md-4">
+            <div class="card exp-card shadow it-card">
+              <h5>Alternant IT Support - HEI</h5>
+              <p>
+                Assistance technique auprès de 150+ utilisateurs, réduction des
+                incidents critiques de 47 %.
+              </p>
+              <a href="itsupport.html" class="btn btn-custom mt-2"
+                >Voir détail</a
+              >
+            </div>
+          </div>
+          <!-- Développeur Logiciel -->
+          <div class="col-md-4">
+            <div class="card exp-card shadow dev-card">
+              <h5>Développeur Logiciel</h5>
+              <p>
+                Développement en Java & React, optimisation backend (+25 %
+                performance).
+              </p>
+              <a href="devlog.html" class="btn btn-custom mt-2">Voir détail</a>
+            </div>
+          </div>
+          <!-- Hackathon -->
+          <div class="col-md-4">
+            <div class="card exp-card shadow hackathon-card">
+              <h5>Hackathon Naturo Match (2024)</h5>
+              <p>
+                <strong>🏆 Vainqueur du Hackathon</strong> - 1er prix grâce au
+                développement frontend React.
+              </p>
+              <a href="hackathon.html" class="btn btn-experience mt-2"
+                >Voir détail</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Votre email" />
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Votre message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-custom">Envoyer</button>
-      </form>
-      <div class="mt-4">
-        <a href="https://github.com/sederahei" class="me-3 text-light"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://linkedin.com/in/sedera-randriamparany" class="me-3 text-light"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="mailto:sedera.randriamparany@gmail.com" class="text-light"><i class="fas fa-envelope fa-2x"></i></a>
       </div>
-    </div>
-  </section>
-</body>
+    </section>
+
+    <!-- Footer amélioré -->
+    <footer class="footer-section bg-dark text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row text-start">
+          <!-- Colonne 1 : Présentation -->
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold">SEDERA</h4>
+            <p class="small">
+              Développeur Fullstack passionné par les technologies web et
+              mobiles. Créateur de solutions robustes et évolutives pour un
+              monde connecté.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="https://github.com/sederahei" class="me-3 text-light"
+                ><i class="fab fa-github fa-lg"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/sedera-randriamparany"
+                class="me-3 text-light"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a
+                href="mailto:sedera.randriamparany@gmail.com"
+                class="text-light"
+                ><i class="fas fa-envelope fa-lg"></i
+              ></a>
+            </div>
+            <button
+              onclick="window.scrollTo({top:0, behavior:'smooth'})"
+              class="btn btn-custom mt-3"
+            >
+              Retour en haut
+            </button>
+          </div>
+
+          <!-- Colonne 2 : Plan du site -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Plan du site</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-light text-decoration-none"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a href="#projets" class="text-light text-decoration-none"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#experiences" class="text-light text-decoration-none"
+                  >Expériences</a
+                >
+              </li>
+              <li>
+                <a href="#apropos" class="text-light text-decoration-none"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 : Liens légaux -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Légal</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Politique de confidentialité</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Conditions d'utilisation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Mentions légales</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+        <div class="text-center small">
+          © 2025 Sedera Portfolio. Tous droits réservés.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

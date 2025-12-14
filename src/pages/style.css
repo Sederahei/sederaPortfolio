@@ -105,10 +105,10 @@ body, html {
 }
 
 .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   margin-bottom: auto;
-  border: 2px solid var(--accent-color);
+  border: 4px solid var(--accent-color);
   box-shadow: 0 4px 12px #2596be ;
 }
 
@@ -152,7 +152,7 @@ body, html {
 
 /* Footer icônes */
 footer {
-  position: fixed;
+  
   bottom: 15px;
   width: 100%;
   text-align: center;
@@ -168,3 +168,101 @@ footer a:hover {
   color: var(--accent-color);
   transform: scale(1.2);
 }
+
+.footer-section {
+  background: linear-gradient(90deg, var(--dark-red), var(--soft-red));
+  color: #fff;
+}
+
+.footer-section h4, .footer-section h5 {
+  color: var(--gold);
+}
+
+.footer-section a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* centrage sur mobile */
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .footer-section .row {
+    text-align: center; /* texte centré sur mobile */
+  }
+
+  .footer-section .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .footer-section ul {
+    padding-left: 0;
+  }
+}
+
+/* Responsive Overlay (Accueil) */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 1.8rem; /* titre réduit */
+  }
+  .overlay h4 {
+    font-size: 1.2rem; /* sous-titre réduit */
+  }
+  .overlay .d-flex {
+    flex-direction: column; /* boutons empilés */
+    gap: 10px;
+  }
+  .btn-custom, .btn-experience {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive À propos */
+@media (max-width: 768px) {
+  #apropos .row {
+    flex-direction: column; /* image au-dessus du texte */
+    text-align: center;
+  }
+  #apropos img {
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive Expériences */
+@media (max-width: 992px) {
+  .bg-experience .row {
+    flex-direction: column; /* cartes empilées */
+    align-items: center;
+  }
+  .exp-card {
+    width: 90%;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive Contact */
+@media (max-width: 768px) {
+  #contact form {
+    width: 100%;
+  }
+  #contact input, 
+  #contact textarea {
+    font-size: 0.9rem;
+  }
+}
+

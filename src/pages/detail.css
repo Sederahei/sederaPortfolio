@@ -1,12 +1,29 @@
 /* Import police */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+:root {
+  --accent-color: #2596be; /* bleu */
+  --dark-red: #672727;     /* rouge foncé */
+  --soft-red: #855252;
+  --gold: #cebc79;         /* doré */
+}
+
+/* Body avec dégradé animé */
 body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(90deg, var(--accent-color), var(--dark-red), var(--soft-red), var(--gold));
+  background-size: 400% 400%; /* nécessaire pour l’animation */
+  animation: gradientFlow 12s ease infinite; /* animation infinie */
   margin: 0;
   padding: 20px;
   color: #333;
+}
+
+/* Animation du dégradé */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Container principal */
@@ -16,14 +33,26 @@ body {
   background: #fff;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 6px 18px #2596be;
+  box-shadow: 0 6px 18px var(--accent-color);
   text-align: center;
-  animation: fadeInUp 1s ease;
+  animation: fadeInUp 1.5s ease; /* une seule fois, fluide */
+}
+
+/* Animation fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Titre */
 .detail-container h1 {
-  color: #2596be; /* accent-color */
+  color: var(--accent-color);
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -35,7 +64,7 @@ body {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 25px;
-  box-shadow: 0 4px 12px #cebc79;
+  box-shadow: 0 4px 12px var(--gold);
 }
 
 /* Texte */
@@ -59,14 +88,14 @@ body {
   margin: 8px 0;
   padding: 10px 15px;
   border-radius: 8px;
-  border-left: 4px solid #2596be;
+  border-left: 4px solid var(--accent-color);
   font-size: 1rem;
 }
 
 /* Bouton retour */
 .btn-custom {
   display: inline-block;
-  background: linear-gradient(90deg, #2596be, #cebc79);
+  background: linear-gradient(90deg, var(--accent-color), var(--gold));
   color: #fff;
   padding: 12px 25px;
   border-radius: 25px;
@@ -78,24 +107,5 @@ body {
 
 .btn-custom:hover {
   transform: scale(1.05);
-  background: linear-gradient(90deg, #cebc79, #2596be);
-}
-
-/* Animation fade-in */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-:root {
-  --accent-color: #2596be; /* bleu */
-  --dark-red: #672727;     /* rouge foncé */
-  --soft-red: #855252;
-  --gold: #cebc79;         /* doré */
+  background: linear-gradient(90deg, var(--gold), var(--accent-color));
 }
